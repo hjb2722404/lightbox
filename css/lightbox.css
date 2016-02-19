@@ -1,0 +1,78 @@
+#G-lightbox-mask {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  z-index: 10000;
+  display: none; }
+
+#G-lightbox-popup {
+  position: fixed;
+  width: 500px;
+  left: 50%;
+  top: 200px;
+  margin-left: -250px;
+  z-index: 10001;
+  display: none; }
+  #G-lightbox-popup .lightbox-pic-view {
+    position: relative;
+    border: 5px solid #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    background-image: url("../img/icon/loading.gif");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #fff;
+    z-index: 2; }
+    #G-lightbox-popup .lightbox-pic-view .lightbox-btn {
+      position: absolute;
+      top: 0;
+      width: 40%;
+      background-color: #000;
+      opacity: 0;
+      filter: alpha(opacity=0);
+      z-index: 1;
+      height: 100%; }
+    #G-lightbox-popup .lightbox-pic-view .lightbox-prev-btn {
+      left: 0; }
+    #G-lightbox-popup .lightbox-pic-view .lightbox-prev-btn-show {
+      background-image: url("../img/icon/prev.png");
+      background-repeat: no-repeat;
+      background-position: left center;
+      cursor: pointer; }
+    #G-lightbox-popup .lightbox-pic-view .lightbox-next-btn-show {
+      background-image: url("../img/icon/next.png");
+      background-repeat: no-repeat;
+      background-position: right center;
+      cursor: pointer; }
+    #G-lightbox-popup .lightbox-pic-view .lightbox-image {
+      display: block; }
+    #G-lightbox-popup .lightbox-pic-view .lightbox-next-btn {
+      right: 0; }
+  #G-lightbox-popup .lightbox-pic-caption {
+    position: relative;
+    background-color: #000;
+    margin: 0 5px;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    margin-top: -93px;
+    z-index: 2; }
+    #G-lightbox-popup .lightbox-pic-caption .lightbox-caption-area {
+      color: #fff;
+      padding: 10px 5px; }
+      #G-lightbox-popup .lightbox-pic-caption .lightbox-caption-area .lightbox-of-index {
+        color: #999; }
+    #G-lightbox-popup .lightbox-pic-caption .lightbox-close-btn {
+      position: absolute;
+      width: 27px;
+      height: 27px;
+      background-image: url("../img/icon/close.png");
+      right: 10px;
+      top: 13px;
+      z-index: 3; }
+
+/*# sourceMappingURL=lightbox.css.map */

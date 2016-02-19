@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="renderer" content="webkit">
+    <title>Light_Box插件</title>
+    <link rel="stylesheet" href="./css/lightbox.css"/>
+
+</head>
+<body>
+
+<h1>1组图片</h1>
+<div>
+    <img class="js-lightbox" data-role="lightbox" data-group="group-1" data-id="111" data-title="标题" data-source="./img/7b0050d458d6b00838f95dcd12257933.jpg" src="./img/7b0050d458d6b00838f95dcd12257933.jpg" alt="" width="100" height="100"/>
+    <img class="js-lightbox" data-role="lightbox" data-group="group-1" data-id="222" data-title="标题2" data-source="./img/7b9aa2b429ff.png" src="./img/7b9aa2b429ff.png" alt="" width="100" height="100"/>
+    <img class="js-lightbox" data-role="lightbox" data-group="group-1" data-id="333" data-title="标题3" data-source="./img/23d5b9388af428a17415a4fc2368e04b.jpg" src="./img/23d5b9388af428a17415a4fc2368e04b.jpg" alt="" width="100" height="100"/>
+    <img class="js-lightbox" data-role="lightbox" data-group="group-1" data-id="444" data-title="标题4" data-source="./img/112.jpg" src="./img/112.jpg" alt="" width="100" height="100"/>
+</div>
+
+<h1>2组图片</h1>
+<div>
+    <img class="js-lightbox" data-role="lightbox" data-group="group-2" data-id="555" data-title="标题5" data-source="./img/7b0050d458d6b00838f95dcd12257933.jpg" src="./img/7b0050d458d6b00838f95dcd12257933.jpg" alt="" width="100" height="100"/>
+</div>
+
+
+<script src="../common/jquery-2.1.1.min.js"></script>
+<script src="js/lightbox.js"></script>
+<script>
+    $(function(){
+        var lightbox = new LightBox({
+            speed:600
+        });
+    });
+</script>
+</body>
+</html>
